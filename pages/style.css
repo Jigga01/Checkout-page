@@ -1,6 +1,17 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  /* text-shadow: 2px 2px 2px whitesmoke; */
+}
 .main-container {
-  margin: 0 15%;
-  position: absolute;
+  padding-top: 100px;
+  margin: 0 0%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 8%;
+  align-items: center;
 }
 h1 {
   font-family: "Montserrat";
@@ -9,7 +20,7 @@ h1 {
   font-size: 36px;
   line-height: 44px;
   color: #4e5150;
-  margin: 100px 0 50px 0;
+  margin: 0px 0 50px 0;
 }
 h4 {
   font-family: "Montserrat";
@@ -29,17 +40,32 @@ label {
   line-height: 15px;
   color: #4f4f4f;
 }
+
+.input-container {
+  display: flex;
+  position: relative;
+}
+
+i {
+  transform: translatey(93%);
+  padding-left: 10px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  color: #828282;
+}
+
 input {
   font-family: "montserrat";
   font-style: normal;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 20px;
-  color: #9e9696;
-  width: 467px;
-  height: 33px;
+  color: #362828;
+  width: 100%;
+  height: 40px;
   margin-top: 2px;
-  padding: 0 0px 0 10px;
+  padding: 0 0px 0 36px;
   border: 1px solid;
   border-color: #828282;
   border-radius: 7px;
@@ -88,7 +114,7 @@ button {
   font-weight: 500;
   font-family: "Montserrat";
   font-style: normal;
-  margin-left: 327px;
+  margin: 50px 0 0 550px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -101,13 +127,93 @@ button:hover {
   filter: blur(0.05px);
 }
 
-footer {
+/* Checkout-section */
+
+.Checkout-cart {
+  margin-top: 50px;
+  display: list-item;
+  padding: 25px 13px;
+  justify-content: center;
+  justify-items: center;
+  border: 1px solid;
+  border-style: none;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+}
+
+.img-item {
+  position: relative;
+}
+
+img {
+  width: 35%;
+  border-radius: 13px;
+}
+h2 {
+  font-family: "montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4e5150;
+}
+
+h3 {
   font-family: "montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 20px;
+  color: #f2994a;
+}
+
+.strike {
+  font-family: "montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  color: #4e5150;
+}
+
+.ship-cost h2 {
+  font-family: "montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+}
+
+hr {
+  margin: 10px 0;
+  border-width: 0px;
+  border-style: none;
+  border: 1px solid;
   color: #bdbdbd;
+}
+h6 {
+  font-family: "montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+}
+.total-cost h5 {
+  font-family: "montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+}
+
+footer {
+  margin-top: 180px;
+  margin-bottom: 20px;
+  position: fixed;
+
   position: relative;
   text-align: center;
 }

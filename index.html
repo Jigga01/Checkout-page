@@ -11,6 +11,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
             rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link rel="stylesheet" href="pages/style.css">
         <title>Checkout-Page</title>
     </head>
@@ -26,12 +27,21 @@
                     <div class="contact-section">
                         <h4>Contact information</h4>
 
-                        <form action="">
+                        <form action="#">
                             <label for="email">Email</label> <br>
-                            <input type="email" id="email" name="email" placeholder="Enter your email..."><br><br>
+                            <div class="input-container">
+                                <input type="email" id="email" name="email" placeholder=" Enter your email...">
 
+                                <i class="fas fa-envelope input-icon"></i>
+                            </div>
+                            <br>
                             <label for="tel">Phone</label> <br>
-                            <input type="tel" id="tel" name="tel" placeholder="Enter your phone..."><br>
+                            <div class="input-container">
+                                <input type="tel" id="tel" name="tel" placeholder=" Enter your phone...">
+
+                                <i class="fa fa-phone input-icon"></i>
+
+                            </div><br>
                         </form>
                     </div><br><br><br><br>
 
@@ -39,13 +49,23 @@
                         <h4>Shipping address</h4>
                         <form action="">
                             <label for="name">Full name</label><br>
-                            <input type="text" name="name" id="name" placeholder="Sanni Olanrewaju"><br><br>
+                            <div class="input-container">
+                                <input type="text" name="name" id="name" placeholder=" Sanni Olanrewaju">
+
+                                <i class="fas fa-circle-user input-icon"></i>
+                            </div><br>
 
                             <label for="address">Address</label><br>
-                            <input type="text" name="address" id="address" placeholder="Your address.."><br><br>
+                            <div class="input-container">
+                                <input type="text" name="address" id="address" placeholder=" Your address..">
+                                <i class="fas fa-house input-icon"></i>
+                            </div><br>
 
                             <label for="city">City</label><br>
-                            <input type="text" name="city" id="city" placeholder="Your city.."><br><br>
+                            <div class="input-container">
+                                <input type="text" name="city" id="city" placeholder=" Your city..">
+                                <i class="fas fa-city input-icon"></i>
+                            </div><br>
                         </form>
                     </div>
 
@@ -53,57 +73,76 @@
                         <div class="country-form">
                             <form action="#">
                                 <label for="country">Country</label><br>
-                                <input type="text" name="country" id="country" placeholder="Your country...">
+                                <div class="input-container">
+                                    <input type="text" name="country" id="country" placeholder="Your country...">
+                                    <i class="fas fa-earth-africa input-icon"></i>
+                                </div>
                             </form>
                         </div>
                         <div class="postal-form">
                             <form action="#"></form>
                             <label for="Postal">Postal code</label><br>
-                            <input type="text" name="postal" id="postal" placeholder="Your postal code"></form>
+                            <div class="input-container">
+                                <input type="text" name="postal" id="postal" placeholder=" Your postal code">
+                                <i class="fa-sharp fa-solid fa-house-flag"></i>
+                            </div>
+                            </form>
                         </div>
                     </div><br>
                     <div class="checks">
-                        <form action="">
+                        <form action="submit">
                             <input type="checkbox" name="checkbox" id="checkbox">
                             <label for="save">Save this information for next time</label>
                         </form>
-                    </div><br><br>
-                    <div>
-                        <form action="#">
-                            <button type="submit">Continue</button>
-                        </form>
                     </div>
-                </div><br><br><br>
+
+                </div>
 
 
 
-                <div>
-                    <div class="img-bag">
-                        <img src="images/photo1.png" alt="bag">
+                <div class="Checkout-cart">
+                    <div class="bag-container">
+                        <div class="img-item">
+                            <img src="images/photo1.png" alt="bag">
+                        </div>
+                        <div class="cost-1">
+                            <h2>Vintage Bagpack</h2><br>
+                            <h3>$54.99
+                                <span class="strike"> <strike>$94.99</strike></span>
+                            </h3><br>
+
+                        </div>
                     </div>
-                    <div class="cost-1">
-                        <h2>Vintage Bagpack</h2><br>
-                        <h3>$54.99</h3><br>
-                        <h4>$94.99</h4><br>
+
+                    <div class="shoe-container">
+                        <div class="img-item">
+                            <img src="images/photo2.png" alt="shoe">
+                        </div>
+                        <div class="cost-2">
+                            <h2>Levi Shoes</h2><br>
+                            <h3>$74.99
+                                <span class="strike"> <strike>$124.99</strike></span>
+                            </h3><br>
+                        </div>
                     </div>
-                    <div>
-                        <!-- <button>- 1 +</button> -->
-                    </div>
-                    <div class="img-shoe">
-                        <img src="images/photo2.png" alt="shoe">
-                    </div>
-                    <div class="cost-2">
-                        <h2>Levi Shoes</h2><br>
-                        <h3>$74.99</h3><br>
-                        <h4>$124.99</h4><br>
-                    </div>
-                    <div>
-                        <!-- <button>- 1 +</button> -->
-                    </div>
+                    <hr>
+                    <span class="ship-cost">
+                        <h2> Shipping</h2>
+                        <h6>$19</h6>
+                    </span>
+                    <hr>
+                    <span class="total-cost">
+                        <h5>Total</h5>
+                        <h6>$148.98</h6>
+                    </span>
                 </div>
 
             </div>
-
+            <div>
+                <form action="submit">
+                    <button type="submit">Continue</button>
+                </form>
+            </div>
         </main>
         <footer>
             <p>
