@@ -4,24 +4,37 @@
   /* text-shadow: 2px 2px 2px whitesmoke; */
 }
 .main-container {
-  padding-top: 100px;
+  padding-top: 50px;
   margin: 0 0%;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: %;
+
   /* align-items: center; */
 }
 
-h1 {
+.shipping-info {
+  width: 35%;
+}
+.contact-section {
+  margin-top: 70px;
+}
+
+.toph1 {
+  display: contents;
+  position: relative;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
   line-height: 44px;
   color: #4e5150;
-  margin: 0px 0 50px 0;
+  text-align: left;
+  margin: 0;
+}
+h1 {
+  display: none;
 }
 h4 {
   font-family: "Montserrat";
@@ -29,7 +42,7 @@ h4 {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  margin: 0 0 10px 0;
+  margin: 5px 0 10px 0;
 
   color: #333333;
 }
@@ -37,7 +50,7 @@ label {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 15px;
   color: #4f4f4f;
 }
@@ -48,7 +61,7 @@ label {
 }
 
 i {
-  transform: translatey(93%);
+  transform: translatey(130%);
   padding-left: 10px;
   position: absolute;
   justify-content: center;
@@ -60,11 +73,11 @@ input {
   font-family: "montserrat";
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 20px;
   color: #362828;
   width: 100%;
-  height: 40px;
+  height: 50px;
   margin-top: 2px;
   padding: 0 0px 0 36px;
   border: 1px solid;
@@ -73,14 +86,12 @@ input {
 }
 .country-postal {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
 }
 .country-postal input {
-  width: 210px;
+  width: auto;
 }
-.postal-form {
-  margin-left: 34px;
-}
+
 .checks {
   display: flex;
   justify-items: center;
@@ -116,7 +127,7 @@ button {
   font-weight: 500;
   font-family: "Montserrat";
   font-style: normal;
-  margin: 10% 0 0 67%;
+  margin: 10% 0 0 74%;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -133,7 +144,7 @@ button:hover {
 
 .Checkout-cart {
   width: 370px;
-  height: 580px;
+  height: 540px;
   margin-top: 100px;
   display: list-item;
   padding: 25px 15px;
@@ -151,10 +162,11 @@ button:hover {
 }
 
 img {
-  width: 80%;
+  width: 70%;
   border-radius: 13px;
 }
 h2 {
+  position: relative;
   font-family: "montserrat";
   font-style: normal;
   font-weight: 600;
@@ -184,7 +196,7 @@ h3 {
 }
 
 .counter {
-  margin-top: 37px;
+  margin-top: 20px;
   width: 120px;
   height: 40px;
   display: flex;
@@ -266,18 +278,9 @@ h6 {
   line-height: 16px;
   color: #333333;
 }
-/* .total-cost h5 {
-  font-family: "montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-  color: #333333;
-} */
-/* Footer-section */
 
 footer p {
-  margin-top: 180px;
+  margin-top: 140px;
   margin-bottom: 20px;
   position: fixed;
   font-family: "montserrat";
@@ -288,4 +291,248 @@ footer p {
   color: #bdbdbd;
   position: relative;
   text-align: center;
+}
+
+/* *************************************************** */
+/* Devices-with-smaller-screen (TABS)*/
+@media screen and (max-width: 769px) {
+  body {
+    padding: 0 15px;
+  }
+  .main-container {
+    padding: 0;
+    margin: 0 0%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .shipping-info {
+    width: 55%;
+  }
+  .Checkout-cart {
+    margin-top: 170px;
+    width: 39%;
+    height: 500px;
+    justify-content: center;
+    justify-items: center;
+  }
+  .img-item {
+    position: relative;
+    width: 130px;
+  }
+
+  img {
+    width: 80%;
+    border-radius: 12px;
+  }
+
+  .counter {
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    border-radius: 7px;
+  }
+  .counter button {
+    width: 22px;
+    height: 19px;
+    border: 2px solid;
+    border-radius: 3px;
+    border-style: none;
+    color: #828282;
+
+    background-color: #e0e0e0;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    line-height: 20px;
+    margin: 0px;
+  }
+  .counter p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0px 20px;
+  }
+  .toph1 {
+    display: contents;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #4e5150;
+    padding: 30px 0 0px 0px;
+  }
+  h1 {
+    display: none;
+  }
+
+  h2 {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 5px;
+  }
+  h3 {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .strike {
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .ship-cost h2,
+  .total-cost h5 {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  h6 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .ship-cost,
+  .total-cost {
+    display: flex;
+    justify-content: space-around;
+    gap: 160px;
+  }
+
+  .country-postal {
+    display: flex;
+  }
+  .country-postal input {
+    width: 180px;
+    flex-direction: column;
+  }
+
+  .postal-form {
+    margin: 0px;
+  }
+  button {
+    border: 1px solid;
+    border-radius: 12px;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: "Montserrat";
+    font-style: normal;
+    margin: 10% 0 0 63%;
+  }
+
+  footer p {
+    margin-top: 140px;
+    margin-bottom: 20px;
+    position: fixed;
+    font-family: "montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+    color: #bdbdbd;
+    position: relative;
+    text-align: center;
+  }
+}
+/* *************************************************** */
+/* Devices-with-smaller-screen (MOBILE)*/
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0 15px;
+  }
+  .main-container {
+    padding: 0;
+    margin: 0 0%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .shipping-info {
+    position: relative;
+    width: 100%;
+    margin-top: 560px;
+  }
+
+  .contact-section {
+    margin-top: 0px;
+  }
+  .Checkout-cart {
+    position: absolute;
+    margin-top: 0px;
+    width: 100%;
+    height: 470px;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 30px;
+  }
+
+  .toph1 {
+    display: none;
+    font-size: 24px;
+    line-height: 29px;
+    padding: 30px 0 0px 0px;
+  }
+  h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 44px;
+    color: #4e5150;
+    position: relative;
+    display: contents;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  h2 {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 5px;
+  }
+
+  .ship-cost,
+  .total-cost {
+    gap: 220px;
+  }
+
+  .country-postal {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .country-postal input {
+    width: 100%;
+  }
+
+  button {
+    border: 1px solid;
+    border-radius: 12px;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: "Montserrat";
+    font-style: normal;
+    margin: 10% 0 0 56%;
+  }
+
+  footer p {
+    margin-top: 140px;
+    margin-bottom: 20px;
+    position: fixed;
+    font-family: "montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+    color: #bdbdbd;
+    position: relative;
+    text-align: center;
+  }
 }
