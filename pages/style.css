@@ -87,9 +87,10 @@ input {
 .country-postal {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .country-postal input {
-  width: auto;
+  width: 100%;
 }
 
 .checks {
@@ -114,6 +115,10 @@ input {
   text-align: center;
 }
 
+.cont-button {
+  text-align: right;
+}
+
 button {
   border: 1px solid;
   border-radius: 12px;
@@ -127,8 +132,9 @@ button {
   font-weight: 500;
   font-family: "Montserrat";
   font-style: normal;
-  margin: 10% 0 0 74%;
+  margin-top: 10%;
   cursor: pointer;
+
   transition: background-color 0.3s ease;
 }
 
@@ -294,152 +300,8 @@ footer p {
 }
 
 /* *************************************************** */
-/* Devices-with-smaller-screen (TABS)*/
-@media screen and (max-width: 769px) {
-  body {
-    padding: 0 15px;
-  }
-  .main-container {
-    padding: 0;
-    margin: 0 0%;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .shipping-info {
-    width: 55%;
-  }
-  .Checkout-cart {
-    margin-top: 170px;
-    width: 39%;
-    height: 500px;
-    justify-content: center;
-    justify-items: center;
-  }
-  .img-item {
-    position: relative;
-    width: 130px;
-  }
-
-  img {
-    width: 80%;
-    border-radius: 12px;
-  }
-
-  .counter {
-    margin-top: 20px;
-    width: 100px;
-    height: 30px;
-    border-radius: 7px;
-  }
-  .counter button {
-    width: 22px;
-    height: 19px;
-    border: 2px solid;
-    border-radius: 3px;
-    border-style: none;
-    color: #828282;
-
-    background-color: #e0e0e0;
-    font-size: 18px;
-    padding: 0;
-    margin: 0;
-    line-height: 20px;
-    margin: 0px;
-  }
-  .counter p {
-    text-align: center;
-    font-size: 14px;
-    line-height: 14px;
-    margin: 0px 20px;
-  }
-  .toph1 {
-    display: contents;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 44px;
-    color: #4e5150;
-    padding: 30px 0 0px 0px;
-  }
-  h1 {
-    display: none;
-  }
-
-  h2 {
-    font-size: 14px;
-    line-height: 16px;
-    margin-bottom: 5px;
-  }
-  h3 {
-    font-size: 13px;
-    line-height: 16px;
-  }
-
-  .strike {
-    font-size: 11px;
-    line-height: 16px;
-  }
-  .ship-cost h2,
-  .total-cost h5 {
-    font-size: 15px;
-    line-height: 18px;
-  }
-  h6 {
-    font-size: 12px;
-    line-height: 16px;
-  }
-
-  .ship-cost,
-  .total-cost {
-    display: flex;
-    justify-content: space-around;
-    gap: 160px;
-  }
-
-  .country-postal {
-    display: flex;
-  }
-  .country-postal input {
-    width: 180px;
-    flex-direction: column;
-  }
-
-  .postal-form {
-    margin: 0px;
-  }
-  button {
-    border: 1px solid;
-    border-radius: 12px;
-    width: 150px;
-    height: 50px;
-    font-size: 15px;
-    line-height: 20px;
-    font-weight: 500;
-    font-family: "Montserrat";
-    font-style: normal;
-    margin: 10% 0 0 63%;
-  }
-
-  footer p {
-    margin-top: 140px;
-    margin-bottom: 20px;
-    position: fixed;
-    font-family: "montserrat";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 17px;
-    color: #bdbdbd;
-    position: relative;
-    text-align: center;
-  }
-}
-/* *************************************************** */
 /* Devices-with-smaller-screen (MOBILE)*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   body {
     padding: 0 15px;
   }
@@ -454,7 +316,7 @@ footer p {
   .shipping-info {
     position: relative;
     width: 100%;
-    margin-top: 560px;
+    margin-top: 700px;
   }
 
   .contact-section {
@@ -464,10 +326,17 @@ footer p {
     position: absolute;
     margin-top: 0px;
     width: 100%;
-    height: 470px;
+    height: 37%;
     justify-content: center;
     justify-items: center;
     margin-top: 30px;
+  }
+
+  .checks input {
+    margin: 0px 3px 0 0;
+    padding: 0;
+    width: 14px;
+    height: 12px;
   }
 
   .toph1 {
@@ -489,6 +358,17 @@ footer p {
     line-height: 29px;
   }
 
+  .img-item {
+    position: relative;
+    width: 180px;
+    margin-right: 30px;
+  }
+
+  img {
+    width: 70%;
+    border-radius: 13px;
+  }
+
   h2 {
     font-size: 14px;
     line-height: 16px;
@@ -497,12 +377,14 @@ footer p {
 
   .ship-cost,
   .total-cost {
-    gap: 220px;
+    gap: 430px;
   }
 
   .country-postal {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
   }
 
   .country-postal input {
@@ -519,7 +401,7 @@ footer p {
     font-weight: 500;
     font-family: "Montserrat";
     font-style: normal;
-    margin: 10% 0 0 56%;
+    margin: 10% 0 0 73%;
   }
 
   footer p {
