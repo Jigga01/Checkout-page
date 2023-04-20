@@ -315,7 +315,7 @@ footer p {
   font-family: "montserrat";
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 17px;
   color: #bdbdbd;
   position: relative;
@@ -326,25 +326,22 @@ footer p {
 /* Devices-with-smaller-screen (MOBILE) */
 @media screen and (max-width: 700px) {
   body {
-    padding: 0 10px 0 10px;
+    padding: 0 15px 0 15px;
   }
 
   .main-container {
-    padding: 50px 1% 0 1%;
+    padding: 50px 0 0 0;
     position: relative;
     display: grid;
     grid-template-columns: auto auto;
-    gap: 100px;
+
     align-items: flex-start;
   }
   .shipping-info {
-    position: relative;
+    position: absolute;
     width: 100%;
-    margin-top: 500px;
-    margin-left: auto;
-  }
-  .contact-section {
-    margin-top: 70px;
+    margin-top: 690px;
+    margin-left: 0px;
   }
 
   .toph1 {
@@ -372,22 +369,13 @@ footer p {
     margin-top: 20px;
   }
   h4 {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px;
     margin: 5px 0 10px 0;
-
-    color: #333333;
   }
+
   label {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 15px;
-    color: #4f4f4f;
+    font-size: 14px;
   }
 
   .input-container {
@@ -459,6 +447,9 @@ footer p {
   .cont-button {
     text-align: right;
   }
+  .cont-button button {
+    height: 60px;
+  }
 
   button {
     border: 1px solid;
@@ -491,24 +482,24 @@ footer p {
   .Checkout-cart {
     position: absolute;
     width: 100%;
-    height: 500px;
-    padding: 20px 15px 10px 15px;
+    height: 600px;
+    padding: 40px 20px 10px 20px;
     justify-content: center;
     justify-items: center;
     border: 1px solid;
     border-style: none;
-    border-radius: 15px;
+    border-radius: 20px;
     background-color: #f2f2f2;
     margin: 70px auto auto;
   }
 
   .img-item {
     position: relative;
-    width: 180px;
+    width: 200px;
   }
 
   img {
-    width: 70%;
+    width: 80%;
     border-radius: 13px;
   }
   h2 {
@@ -516,7 +507,7 @@ footer p {
     font-family: "montserrat";
     font-style: normal;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 20px;
     color: #4e5150;
     margin-bottom: 10px;
@@ -526,7 +517,7 @@ footer p {
     font-family: "montserrat";
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 20px;
     color: #f2994a;
   }
@@ -542,15 +533,9 @@ footer p {
   }
 
   .counter {
-    margin-top: 20px;
+    margin-top: 50px;
     width: 120px;
     height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid;
-    border-radius: 8px;
-    border-color: #828282;
     padding: 10px 0px;
   }
   .counter button {
@@ -640,9 +625,8 @@ footer p {
   }
 
   footer p {
-    margin-top: 140px;
+    margin-top: 1700px;
     margin-bottom: 20px;
-    position: fixed;
     font-family: "montserrat";
     font-style: normal;
     font-weight: 600;
