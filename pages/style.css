@@ -4,15 +4,15 @@
   /* text-shadow: 2px 2px 2px whitesmoke; */
 }
 body {
-  padding: 0 100px 0 100px;
+  padding: 0 70px 0 70px;
 }
 .main-container {
-  padding: 50px 5% 0 5%;
+  padding: 50px 4% 0 4%;
   margin: 0 0%;
   position: relative;
   display: grid;
-  grid-template-columns: auto auto;
-  gap: 200px;
+  grid-template-columns: 52% 45%;
+  gap: 40px;
   align-items: flex-start;
 }
 
@@ -324,7 +324,7 @@ footer p {
 
 /* *************************************************** */
 /* Devices-with-smaller-screen (MOBILE) */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   body {
     padding: 0 15px 0 15px;
   }
@@ -396,13 +396,13 @@ footer p {
     font-family: "montserrat";
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 20px;
     color: #362828;
     width: 100%;
     height: 50px;
     margin-top: 2px;
-    padding: 0 0px 0 36px;
+    padding: 0 0px 0 30px;
     border: 1px solid;
     border-color: #828282;
     border-radius: 7px;
@@ -448,7 +448,8 @@ footer p {
     text-align: right;
   }
   .cont-button button {
-    height: 60px;
+    margin-top: 50px;
+    height: 50px;
   }
 
   button {
@@ -507,7 +508,7 @@ footer p {
     font-family: "montserrat";
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
     color: #4e5150;
     margin-bottom: 10px;
@@ -533,7 +534,7 @@ footer p {
   }
 
   .counter {
-    margin-top: 50px;
+    margin-top: 30px;
     width: 120px;
     height: 40px;
     padding: 10px 0px;
@@ -570,7 +571,7 @@ footer p {
 
   .cost-1,
   .cost-2 {
-    width: auto;
+    width: 50%;
   }
   .ship-cost,
   .total-cost {
